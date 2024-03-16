@@ -1,1 +1,1 @@
-Should use Docker to run
+Running with Docker is better
