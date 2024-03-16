@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  customer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8009:8000
+    depends_on:
+      - restaurant_db
+    volumes:
+      - .:/app
+  restaurant_db:
+    image: mysql:5.7.22
+    environment:
+      MYSQL_DATABASE: restaurant
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - ./storage/dbdata:/var/lib/mysql
+    ports:
+      - 33170:3306
+
+
+

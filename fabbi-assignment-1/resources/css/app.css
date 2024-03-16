@@ -1,0 +1,50 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  #regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 40%;
+    min-width: 100px;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 30px;
+    width: 55px;
+    margin: 0 0px;
+    background-color: #bbbbbb;
+    border: none;  
+    display: inline-block;
+    opacity: 0.5;
+    align-items: center;
+  }
+  
+  .step1 {
+    height: 30px;
+    width: 55px;
+    margin: 0 0px;
+    border: none;  
+    display: inline-block;
+    opacity: 0.5;
+    align-items: center;
+    background-color: #66FFFF;
+  }
+  #dynamicAddRemove{
+    justify-content: center;
+  }
+  #dynamicAddRemove td, #dynamicAddRemove th, #dynamicAddRemove tr {
+  border: none;
+  }
