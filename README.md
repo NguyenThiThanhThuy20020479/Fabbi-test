@@ -1,1 +1,3 @@
-Running with Docker is better
+Note:
+- Running with Docker is better
+- Running migration and seeder to update database
